@@ -19,11 +19,11 @@
     <!--Barra de navegación principal ------------------------->
     <nav class="navbar-block">
         <ul class="navbar-bar">
-            <li class="navbar-element">prácticas</li>
-            <li class="navbar-element"><a href="#"></a>Inicio</li>
-            <li class="navbar-element"><a href="#"></a>Acerca de</li>
-            <li class="navbar-element"><a href="#"></a>Servicios</li>
-            <li class="navbar-element"><a href="#"></a>Contacto</li>
+            <li class="navbar-element" id="navbar-logo">práctica prj.</li>
+            <li class="navbar-element"><a href="#">Inicio</a></li>
+            <li class="navbar-element"><a href="#">Sobre nosotros</a></li>
+            <li class="navbar-element"><a href="#">Más prácticas</a></li>
+            <li class="navbar-element"><a href="#">Contacto</a></li>
         </ul>
     </nav>
 
@@ -31,6 +31,7 @@
     <header> 
         <h1>Práctica</h1>
         <h2>Posicionamiento CSS</h2> 
+        <p class="flechas">↓ ↓ ↓</p>
     </header>
     <main class = "main-container">
         <section class="main-section">
@@ -39,12 +40,31 @@
                 <p>El posicionamiento en CSS se refiere a la forma en que los elementos HTML son ubicados dentro de la estructura de una página web. CSS ofrece diferentes métodos para controlar dónde y cómo aparecen estos elementos en relación con otros en la página.</p>
             </div>
             <div>
+                <img class="gif-conchas" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcW85cmx4MDRwd2J6aG01YmhwazE1ODVpdngxdzlhNHJrYmdhdnk2ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/hCC3P7dj3NKSI/giphy.gif" type="gif" alt="gif conchas girando" alt="gif conchas girando">
+
                 <h3>Tipos de Posicionamiento</h3>
                 <p>CSS proporciona varias opciones de posicionamiento, cada una con su propio comportamiento y propósito se maneja con la propiedad position:</p>
-                
-                <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcW85cmx4MDRwd2J6aG01YmhwazE1ODVpdngxdzlhNHJrYmdhdnk2ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/hCC3P7dj3NKSI/giphy.gif">
             </div>
-           
+           <dl>
+                <dt>Estático (static)</dt>
+                <dd>Es el valor por defecto para todos los elementos. Lo usamos cuando no se necesita un control especial sobre la posición de un elemento.
+                Los elementos se posicionan uno tras otro en el flujo del documento, lo que es ideal para layouts sencillos.</dd>
+                <br>
+                <dt>Relativo (relative):</dt>
+                <dd>Un elemento con position: relative se posiciona en relación con su posición original en el flujo del documento. Es decir, el elemento se mueve desde donde estaría normalmente, sin alterar el espacio que ocupa en el flujo. Permite ajustar la posición de un elemento ligeramente sin afectar el layout general. Puedes usar las propiedades top, right, bottom, y left para mover el elemento en relación con su posición original.</dd>
+                <br>
+                <dt>Absoluto (absolute):</dt>
+                <dd>Un elemento con position: absolute se elimina del flujo normal del documento y se posiciona en relación con su contenedor más cercano que tenga un posicionamiento distinto de static.
+                Ubicación precisa: El elemento se puede colocar en cualquier lugar dentro de su contenedor, usando top, right, bottom, y left.</dd>
+                <br>
+                <dt>Fijo (fixed):</dt>
+                <dd>Útil para elementos que deben permanecer en la misma posición en la pantalla, incluso cuando se hace scroll.
+                Comúnmente usado para menús de navegación, barras superiores, o botones de retorno al inicio.</dd>
+                <br>
+                <dt>Adherido (sticky):</dt>
+                <dd>Combina características de relative y fixed. El elemento se comporta como relativo hasta que el usuario hace scroll y alcanza una posición definida, donde se "adhiere" a la ventana gráfica.
+                Ideal para menús que se desplazan con la página hasta un punto y luego permanecen fijos.</dd>
+           </dl>
         </section>
         
         <aside class="main-aside">
