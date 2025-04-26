@@ -1,0 +1,109 @@
+/*MODO DE USO DE GOOGLE FONTS
+
+    // <weight>: Use a value from 400 to 700
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+
+    // <weight>: Use a value from 100 to 900
+
+    .inter-<uniquifier> {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;}
+*/
+
+
+/*Estilos generales ------------------*/
+body{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/*HEADER
+Tendrá una posición normal que no afecte al flujo del document.*/
+header{
+    width: 100vw;
+    padding: 0;
+}
+
+h1{
+    font-family: "Pixelify Sans", sans-serif;
+    text-transform: uppercase;
+    line-height: 80%;
+    font-weight: 700;
+    font-size: 20vw;
+    margin: 1vw;
+    padding: 0;
+}
+
+h2{
+    font-family: "Pixelify Sans", sans-serif;
+    text-transform: uppercase;
+    line-height: 80%;
+    font-weight: 700;
+    font-size: 6vw;
+    margin: 1vw;
+    padding: 0;
+}
+
+
+/*NAV
+aparecerá debajo del header, pero al hacer scroll y llege al borde del navegador se mantendrá fijo.*/
+nav{
+    position: sticky;
+    top: 0px;
+    width: 100vw;
+    padding: 0.5vh;
+    background-color: lightgray;
+    color: black;
+}
+
+
+/*SECTION
+Contiene el contenido principal y deberá no afectar al flujo normal del documento. */
+.main-container{
+    display: flex;
+    height: 200vh;
+    width: 100vw;
+}
+
+.main-section{
+    height: 200vh;
+    width: 70%;
+    background-color: rgb(120, 170, 255);
+}
+
+
+
+/*ASIDE
+posicionado a la derecha de la sección principal del contenido y alineado en vertical con section.
+Fondo distinto y un tamaño definido para que sea claramente visible.*/
+.main-aside{
+    height: 100%;
+    width: 30%;
+    background-color: blue;
+}
+
+
+/*FOOTER
+Anclado en la parte inferior de la ventana del navegador. Siempre visible, tmbn cuando el usuario se desplace hacia abajo en la página.*/
+footer{
+    position: fixed;
+    bottom: 0px;
+    z-index: 3;
+    width: 100vw;
+    margin: 0px;
+    padding: 1vh 1vw;
+    background-color: black;
+    color:gainsboro;
+}
+
+.footer-element{
+    display: inline-block;
+    margin: 0 3vw;
+}
+
+
+/*Estilos específicos------------------*/
