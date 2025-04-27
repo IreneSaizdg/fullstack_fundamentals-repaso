@@ -19,13 +19,23 @@ body{
     font-weight: 400;
     font-style: normal;
     font-size: 2.75vh;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 
 
 /*HEADER
 Tendrá una posición normal que no afecte al flujo del document.*/
 header{
-    width: 100vw;
+    width: 90vw;
     padding: 8vw 3vw 4vw 3vw; 
 }
 
@@ -57,13 +67,16 @@ h2{
 }
 
 
+
 /*NAV
 aparecerá debajo del header, pero al hacer scroll y llege al borde del navegador se mantendrá fijo.*/
 .navbar-block{
+    display: flex;
+    justify-content: flex-start;
     position: sticky;
     top: 0px;
     width: 100vw;
-    padding: 1vh 2vw;
+    padding: 1vh 0vw 1vh 1vw;
     margin: 0;
     background: rgba(255, 255, 255, .3);
     backdrop-filter: blur(5px);
@@ -72,6 +85,11 @@ aparecerá debajo del header, pero al hacer scroll y llege al borde del navegado
 }
 
 .navbar-bar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
     padding: 0;
     margin: 0;
 }
@@ -79,42 +97,45 @@ aparecerá debajo del header, pero al hacer scroll y llege al borde del navegado
 .navbar-element{
     display: inline-block;
     padding: 0;
-    margin: 0 1vw 0 0 ; 
-    font-size: 1.75vh;
+    margin: 0 3vw 0 0 ; 
+    font-size: 2vh;
+    font-weight: 400;
+    text-transform: lowercase;
 }
 
 #navbar-logo{
     font-family: "Pixelify Sans", sans-serif;
-    text-transform: uppercase;
     font-weight: 700;
     font-size: 2.5vh;
-    margin: 0 3vw 0 0 ; 
+    margin: 0 50vw 0 0 ; 
+    text-transform: uppercase;
 }
+
+
 
 /*SECTION
 Contiene el contenido principal y deberá no afectar al flujo normal del documento. */
-
 h3{
-    font-size: 5vh;
+    font-size: 4.5vh;
 }
 
 .main-container{
-    line-height: 125%;
     display: flex;
     width: 100vw;
-    padding-bottom: 5vh;
+    padding: 0;
+    margin: 0;
 }
 
 .main-section{
     width: 70%;
-    background-color: rgb(153, 190, 255);
-    padding: 12vh 6vw;
+    background-color: rgb(205, 223, 255);
+    padding: 12vh 8vw;
 }
 
     /*Listas ----------------------------------------*/
     dl{
         margin-top: 6vh;
-        width: 80%;   
+        width: 90%;   
     }
     dt{
         font-weight: bold;
@@ -128,6 +149,11 @@ h3{
         width: 100%;
         margin: 7vh 0 10vh 0;
     }
+    .gif-paisaje{
+        height: 100%;
+    }
+
+
 
 /*ASIDE
 posicionado a la derecha de la sección principal del contenido y alineado en vertical con section.
@@ -137,28 +163,34 @@ Fondo distinto y un tamaño definido para que sea claramente visible.*/
     width: 30%;
     background-color: blue;
     height: inherit;
+    overflow: hidden;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
 }
+
 
 
 /*FOOTER
 Anclado en la parte inferior de la ventana del navegador. Siempre visible, tmbn cuando el usuario se desplace hacia abajo en la página.*/
 footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     position: fixed;
     bottom: 0px;
-    z-index: 3;
     width: 100vw;
-    margin: 0px;
-    padding: 0.5vh 0.5vw;
-    background-color: black;
-    color:gainsboro;
+    margin: 0;
+    padding: 1.5vh 1vw 2vh 1vw;
+    background: rgba(0, 0, 0, 0.969);
+    backdrop-filter: blur(5px);
+    color: white;
 }
 
 .footer-element{
-    display: inline-block;
-    margin: 0 3vw;
-    padding: 0;
+    margin: 0;
+    padding: 0 3vw;
     font-size: 1.75vh;
+    color: white;
 }
-
-
-/*Estilos específicos------------------*/
