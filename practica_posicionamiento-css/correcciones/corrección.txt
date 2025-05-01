@@ -1,0 +1,11 @@
+CORRECCIONES:
+
+-> Repetir quitando el flex y hacerlo con posiciones todo :(
+
+
+- Body tiene margin por defecto. 
+- El 100vw 100vh coge el margen del contenedor y se desborda, cuidao.
+- Imágenes nunca sueltas, siempre de un contenedor (div, picture, figure...)
+    <div>
+        <img src>
+    </div>

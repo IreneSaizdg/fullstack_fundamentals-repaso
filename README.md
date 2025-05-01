@@ -1,8 +1,7 @@
 # Fundamentals Repaso #
-Prácticas de Rampup. A entregar en clase.
-Realizadas por Irene Saiz Lodoso.
-Para el bootcamp de FullStack Developer. 
-Marzo-Julio 2025
+Prácticas del Rampup a entregar en clase.
+Realizadas por Irene Saiz Lodoso para el bootcamp de FullStack Developer de marzo a julio de 2025.
+
 
 
 ## Listado de prácticas: ##
