@@ -12,8 +12,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-    <!--Link iconos-->
+    <!--Link iconos Google y Fontawesome-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/5233bc214d.js" crossorigin="anonymous"></script>
+    
     <!--Link css (siempre último) -->
     <link href="./css/main.css" rel="stylesheet" type="text/css" />
 </head>
@@ -23,7 +25,7 @@
         <!-- Checkbox -->
         <input type="checkbox" id="checkbox_menu-desplegable" class="checkbox_menu-desplegable">
         <!-- Botón con icono hamburguesa -->
-        <div class="navbar-block">
+        <div class="navbar-block efecto_cristal-1">
             <header class="logo-nabar"><p>My page</p></header>
             <button class="button_hamburguesa">
                 <label for="checkbox_menu-desplegable">
@@ -42,17 +44,59 @@
     </nav>
 
 <!--BLOUE PRESENTACIÓN--------------->
-    <header>
-        <p>Hola!</p>
-        <h1>Mi nombre es irene</h1>
-        <h2>Diseñadora gráfica
-            y futura full stack developer</h2>
-    </header>
-    
-    <!-- Navbar items-->
+    <main class="main_presentación">
+        <header class="header_presentacion">
+            <p>Hola!</p>
+            <h1>Mi nombre es Irene</h1>
+            <h2>Diseñadora gráfica <br>
+                y futura full stack developer</h2>
+        </header>
+
+    <!--SECCIÓN AURA --------------------->
+        <section class="seccion-aura">
+        <!-- Botones de redirección -->
+            <div class="bloque_buttons-redireccion">
+                <button class="button_redireccion button_bio-home">
+                    <a href="#">Bio</a>
+                </button>
+                <button class="button_redireccion button_portfolio-home">
+                    <a href="#">Portfolio</a>
+                </button>
+                <button class="button_redireccion button_contact-home">
+                    <a href="#">Contacta</a>
+                </button>
+            </div>
+        <!--Degradado https://cssgradient.io/-->
+            <div class="gradient-principal gradient_home">
+                <img src="./assets/image_flor-s.png" class="img_flor-home"/>
+            </div>
+        </section>
+
+    <!--SECCIÓN REDES --------------------->
+        <section class="seccion_redes">
+            <p>Conoce más en:</p>
+            <div class="bloque_redes">
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="https://www.behance.net" target="_blank" aria-label="Behance">
+                    <i class="fa-brands fa-square-behance"></i>
+                </a>
+                <a href="https://es.linkedin.com/" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </div>
+        </section>
+    </main>
+
+<!--NAV REDES ----------------------->
+    <nav></nav>
 
 
     <!--FOOTER----------------------->
-    <footer></footer>
+    <footer class="efecto_cristal-1">
+        <p>©2025 IreneSaiz</p>
+        <p><a href="#">Privacidad y cookies</a></p>
+    </footer>
 </body>
 </html>

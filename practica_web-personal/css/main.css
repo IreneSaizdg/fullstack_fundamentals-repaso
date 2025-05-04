@@ -5,11 +5,10 @@
 }
 
 body{
-    padding-top: 5em;
     font-family: "Inter", sans-serif;
 }
 
-a{text-decoration:none; color: inherit}
+a{text-decoration:none; color: inherit;}
 
 .container{margin: 0 auto;}
 
@@ -25,11 +24,48 @@ a{text-decoration:none; color: inherit}
 
 .flex-container{display:flex;}
 
-/*BASE CLASES ↑↑↑ ---------------------------------------------*/
+/*CLASES BASE ↑↑↑ -----------------------------------------------*/
 
 
+/*EFECTOS ↓↓↓ ---------------------------------------------------*/
+.efecto_cristal-1{
+    background-color: #eaeaea62;
+    backdrop-filter: blur(8px); 
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
 
-/*CLASES GENERALES ↓↓↓ ----------------------------------------*/
+/*DEGRADADOS ↓↓↓ ---------------------------------------------------*/
+.gradient-principal{
+    background: #ffffff;
+    background: radial-gradient(circle,rgba(255, 255, 94, 1) 0%, rgba(229, 229, 211, 0.7) 50%, rgba(217, 217, 217, 0.5) 60%, rgba(255, 255, 255, 0) 70%);
+    /*background: radial-gradient(circle,rgba(255, 255, 94, 1) 0%,rgba(232, 232, 194, 0.75) 35%, rgba(233, 233, 233, 0.75) 50%, rgba(255, 255, 255, 0) 65%);*/
+}
+
+
+/*BOTONES ↓↓↓ ---------------------------------------------------*/
+    .button_enviar{
+        border-radius: 2em;
+        color: white;
+        background-color: black;
+    }
+    .button_redireccion{
+        background-color: rgb(186, 186, 181);
+        color: #000;
+        border-radius: 1000em;
+        padding: 0.7em 1.8em;
+        font-family: inherit;
+        font-size: 1em;
+        font-weight: 700;
+        border: none;
+        box-shadow: none;
+        outline: none;
+    }
+        .button_redireccion:hover {
+            background-color: #7d7d7d;
+        }
+
+
+/*CLASES ELEMENTOS GENERALES ↓↓↓ -------------------------------*/
 
 /*Nabvar---------------------------------------*/
     /*Barra de navegación*/
@@ -39,12 +75,9 @@ a{text-decoration:none; color: inherit}
         left: 0;               
         width: 100%;           
         z-index: 1000;         
-        background-color: #eaeaea62;
-        backdrop-filter: blur(8px); 
-        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     .navbar-block{
-        padding: 0.75em 2em;
+        padding: 0.75em 1.5em;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -52,7 +85,7 @@ a{text-decoration:none; color: inherit}
     }
         /*Logo Navbar*/
         .logo-nabar{
-            font-weight: 700;
+            font-weight: 600;
             font-size: 1.5em;
         }
         /*Botón hamburguesa*/
@@ -61,9 +94,11 @@ a{text-decoration:none; color: inherit}
             border: none;
             color: black;
             cursor: pointer;
+            padding-top: 0.25em;
         }
         .icon-menu{
             font-size: 3.25em;
+            cursor: pointer;
         }
 
     /*Bloque desplegable*/
@@ -124,13 +159,146 @@ a{text-decoration:none; color: inherit}
 
 
 /*Footer-----------------------------------------------------*/
+    footer{
+        position: fixed;                     
+        left: 0;               
+        bottom: 0;  
+        width: 100%;           
+        z-index: 1000;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1em 2em 1em 1.5em;
+    }
+
+    footer p {
+        color: black;
+    }
+
+    footer a {
+        text-decoration: underline;
+    }
 
 
-/*Biografía-------------------------*/
-/*Portfolio (galería imgs)----------*/
-/*Contacto (formulario)-------------*/
 
-/*Efectos (pseudoclases hover, focus etc...)-------------*/
+/* CLASES HOME ↓↓↓ ------------------------------------------*/
+    /*Bloque de presentación*/
+    .main_presentación{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        padding-top: 8em;
+    }
+        /*Header presentación*/
+        .header_presentacion{
+            position: absolute;
+            bottom: 26%;
+            z-index: 100;
+            width: 100%;
+            text-align: center;
+        }
+        
+            .header_presentacion p{
+                font-size: 2.25em;
+                font-weight: 700;
+                padding-bottom: 1em;
+            }
+        
+            .header_presentacion h1{
+                font-size: 1.5em;
+                font-weight: 650;
+                padding-bottom: 1em;
+            }
+
+            .header_presentacion h2{
+                font-size: 1.5em;
+                font-weight: 400;
+                line-height: 1.9rem;
+            }
+
+
+        /*Sección aura*/
+        .seccion-aura{
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            position: relative;
+            top: 10%;
+        }
+            /*Bloque Degradado + flor*/
+            .gradient_home{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 38vh;
+                width: 38vh;
+                border-radius: 1000em;
+            }
+                .img_flor-home{
+                    width: 30%;
+                    height: 30%;
+                }
+
+            /*Bloque botones flotantes*/
+            .bloque_buttons-redireccion{
+                position: absolute;
+                height: 100%;
+                width: 100%;
+            }
+
+                .button_bio-home{
+                    position: absolute;
+                    top: 22%;
+                    left: 8%;
+                }
+                .button_portfolio-home{
+                    position: absolute;
+                    top: -10%;
+                    left: 50%;
+                }
+                .button_contact-home{
+                    position: absolute;
+                    top: 30%;
+                    left: 60%;
+                }
+
+
+        /*Sección redes flotantes*/
+        .seccion_redes{
+            position: absolute;
+            width: 100%;
+            bottom: 5em;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 1.75em 0 1.5em;
+        }
+            .bloque_redes {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 0.75em;
+                }
+                
+                .bloque_redes a {
+                color:#555;
+                font-size: 2.25rem;
+                transition: color 0.3s ease;
+                }
+
+                .bloque_redes a:hover {
+                color: #000000;
+                }
+
+
+/* CLASES BIO ↓↓↓ ------------------------------------------*/  
+
+/* CLASES PORTFOLIO ↓↓↓ ------------------------------------------*/
+
+/* CLASES CONTACTO ↓↓↓ ------------------------------------------*/
 
 
 
@@ -168,6 +336,7 @@ a{text-decoration:none; color: inherit}
             position: absolute;
             right: 0;
         }
+    }
 /*a partir de 992px*/
 
 
