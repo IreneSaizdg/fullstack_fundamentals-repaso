@@ -45,7 +45,7 @@ a{text-decoration:none; color: inherit;}
 }
 .gradient-principal_linear{
     background: #ffffff;
-    background: linear-gradient(180deg,rgba(255, 255, 94, 0.8) 0%, rgba(78, 78, 78, 0.7) 100%);
+    background: linear-gradient(180deg,rgba(255, 255, 94, 1) 0%, rgba(229, 229, 211, 0.7) 50%, rgba(217, 217, 217, 0.5) 60%, rgba(255, 255, 255, 1) 100%);
 }
 
 
@@ -308,11 +308,15 @@ a{text-decoration:none; color: inherit;}
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding-top: 8em;
+    padding-top: 6em;
 }
 
 /*Indicador de página --------------------*/
-
+.indicador_bio {
+    width: 90%;
+    background-color: #eaeaea;
+    margin-bottom: 1em;
+}  
 
 /*Card Bio -------------------------------*/
 .card_bio{
@@ -397,9 +401,10 @@ a{text-decoration:none; color: inherit;}
             }
         
         /*Botón de redirección a portfolio*/ 
-        .button_bio {
+        .button_card-bio {
             width: 100%;
         }  
+
     
 
 /*Botón portfolio----------*/
