@@ -3,11 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Mi web personal :) </title>
-    <!--Links css, link tipografías, favicon -->
+    <title> Mi web </title>
+    <!--Link favicon -->
+    <link rel="icon" href="ruta/al/favicon.ico">
+
+    <!--Link Tipografías Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!--Link iconos-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--Link css (siempre último) -->
+    <link href="./css/main.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+    <!--NABVAR----------------------->
+    <nav class="navbar">
+        <!-- Checkbox -->
+        <input type="checkbox" id="checkbox_menu-desplegable" class="checkbox_menu-desplegable">
+        <!-- Botón con icono hamburguesa -->
+        <div class="navbar-block">
+            <header class="logo-nabar"><p>My page</p></header>
+            <button class="button_hamburguesa">
+                <label for="checkbox_menu-desplegable">
+                    <span class="material-symbols-rounded icon-menu">menu</span>
+                </label>
+            </button>
+        </div>
+
+        <!-- Navbar items-->
+        <ul class="bloque_menu-desplegable">
+            <li><a href="#">Home →</a></li>
+            <li><a href="#">Bio →</a></li>
+            <li><a href="#">Portfolio →</a></li>
+            <li><a href="#">Contact →</a></li>
+        </ul>
+    </nav>
+
+<!--BLOUE PRESENTACIÓN--------------->
+    <header>
+        <p>Hola!</p>
+        <h1>Mi nombre es irene</h1>
+        <h2>Diseñadora gráfica
+            y futura full stack developer</h2>
+    </header>
     
-    
+    <!-- Navbar items-->
+
+
+    <!--FOOTER----------------------->
+    <footer></footer>
 </body>
 </html>

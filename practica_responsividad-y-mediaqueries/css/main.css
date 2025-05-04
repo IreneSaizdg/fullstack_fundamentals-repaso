@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{}
+
+a{}
+
+.container {}
+
+.full-container{}
+
+.flex-container{}
+
+.grid-container{}
+
+.dos-columnas{}
+
+.tres-columnas{}
+
+.cuatro-columnas{}
+
+.grid-container{}
+
+.flex-container{}
+
+
+/*BASE CLASES ↑↑↑ ---------------------------------------------*/
+
+
+
+/*CLASES Y MEDIAQUERIES ESPECÍFICAS ↓↓↓ -----------------------*/
+
+/*
+-------------------------------------------------------
+                hasta 600px
+-------------------------------------------------------
+*/
+@media screen and (max-width: 600px) {
+    
+}
+/*hasta 600px*/
+
+
+/*
+-------------------------------------------------------
+                hasta 900px
+-------------------------------------------------------
+*/
+@media screen and (max-width: 900px) {
+    
+}
+/*hasta 900px*/
+
+
+/*
+-------------------------------------------------------
+                a partir de 901 px
+-------------------------------------------------------
+*/
+@media screen and (min-width: 901px) {
+    
+}
+/*a partir de 901px*/

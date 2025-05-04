@@ -1,0 +1,182 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding-top: 5em;
+    font-family: "Inter", sans-serif;
+}
+
+a{text-decoration:none; color: inherit}
+
+.container{margin: 0 auto;}
+
+.full-container{width: 100%;}
+
+.dos-columnas{}
+
+.tres-columnas{}
+
+.cuatro-columnas{}
+
+.grid-container{display:grid;}
+
+.flex-container{display:flex;}
+
+/*BASE CLASES ↑↑↑ ---------------------------------------------*/
+
+
+
+/*CLASES GENERALES ↓↓↓ ----------------------------------------*/
+
+/*Nabvar---------------------------------------*/
+    /*Barra de navegación*/
+    .navbar {
+        position: fixed;       
+        top: 0;                
+        left: 0;               
+        width: 100%;           
+        z-index: 1000;         
+        background-color: #eaeaea62;
+        backdrop-filter: blur(8px); 
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .navbar-block{
+        padding: 0.75em 2em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+        /*Logo Navbar*/
+        .logo-nabar{
+            font-weight: 700;
+            font-size: 1.5em;
+        }
+        /*Botón hamburguesa*/
+        .button_hamburguesa {
+            background: none;
+            border: none;
+            color: black;
+            cursor: pointer;
+        }
+        .icon-menu{
+            font-size: 3.25em;
+        }
+
+    /*Bloque desplegable*/
+    .bloque_menu-desplegable {
+        list-style: none;
+        display: none;
+        background-color: #eaeaea;
+        color: black;
+    }
+
+    .bloque_menu-desplegable li{
+        border-bottom: 1px solid #555;
+    }
+
+    .bloque_menu-desplegable li a {
+        display: block;
+        padding: 1rem;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .bloque_menu-desplegable li a:hover {
+        background-color: #555;
+    }
+
+    /* Checkbox:
+        Mostrar el menú cuando el checkbox está marcado:
+        toggle-menu: es un <input type="checkbox"> oculto que actúa como interruptor (on/off).
+        :checked: es un pseudoselector que aplica estilos cuando el checkbox está marcado (cuando el menú está abierto).
+        +: es el combinador de hermano adyacente. Solo selecciona el siguiente hermano inmediato en el HTML.*/
+    .checkbox_menu-desplegable {
+    display: none;
+    }
+    .checkbox_menu-desplegable:checked + .navbar-block + .bloque_menu-desplegable {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Alinear horizontalmente en pantallas grandes (opcional)
+  @media (min-width: 768px) {
+    .hamburger-button {
+      display: none;
+    }
+
+    ul {
+      display: flex !important;
+      justify-content: flex-end;
+      gap: 1rem;
+      background: none;
+    }
+
+    ul li a {
+      padding: 0.5rem 1rem;
+    }
+  }*/
+
+/*Nabvar-Cierre*-----------------*/
+
+
+/*Footer-----------------------------------------------------*/
+
+
+/*Biografía-------------------------*/
+/*Portfolio (galería imgs)----------*/
+/*Contacto (formulario)-------------*/
+
+/*Efectos (pseudoclases hover, focus etc...)-------------*/
+
+
+
+
+/*MEDIAQUERIES ↓↓↓ --------------------------*/
+/*
+-------------------------------------------------------
+                a partir de 768px
+-------------------------------------------------------
+*/
+@media screen and (min-width: 768px) {
+    /*Nabvar---------------------------------------*/
+        /*Bloque desplegable*/
+        .bloque_menu-desplegable {
+            width: 40%;
+            position: absolute;
+            right: 0;
+        }
+
+        
+}
+/*a partir de 768px*/
+
+
+/*
+-------------------------------------------------------
+                a partir de 992px
+-------------------------------------------------------
+*/
+@media screen and (min-width: 992px) {
+    /*Nabvar---------------------------------------*/
+        /*Bloque desplegable*/
+        .bloque_menu-desplegable {
+            width: 25%;
+            position: absolute;
+            right: 0;
+        }
+/*a partir de 992px*/
+
+
+/*
+-------------------------------------------------------
+                a partir de 1200 px
+-------------------------------------------------------
+*/
+@media screen and (min-width: 1200px) {
+    
+}
+/*a partir de 1200px*/
