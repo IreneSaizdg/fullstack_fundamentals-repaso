@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Irene Saiz's bio </title>
+    <!--Link favicon -->
+    <link rel="icon" href="../assets/image_favicon.png">
+
+    <!--Link Tipografías Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!--Link iconos Google y Fontawesome-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/5233bc214d.js" crossorigin="anonymous"></script>
+    
+    <!--Link css (siempre último) -->
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!--NABVAR----------------------->
+    <nav class="navbar">
+        <!-- Checkbox -->
+        <input type="checkbox" id="checkbox_menu-desplegable" class="checkbox_menu-desplegable">
+        <!-- Botón con icono hamburguesa -->
+        <div class="navbar-block efecto_cristal-1">
+            <header class="logo-nabar"><p>My page</p></header>
+            <button class="button_hamburguesa">
+                <label for="checkbox_menu-desplegable">
+                    <span class="material-symbols-rounded icon-menu">menu</span>
+                </label>
+            </button>
+        </div>
+
+        <!-- Navbar items-->
+        <ul class="bloque_menu-desplegable">
+            <li><a href="../index.html">Home →</a></li>
+            <li><a href="./bio.html">Bio →</a></li>
+            <li><a href="./portfolio.html">Portfolio →</a></li>
+            <li><a href="./contacto.html">Contact →</a></li>
+        </ul>
+    </nav>
+
+    <main class="main_bio">
+        <article class="card_bio">
+            <section class="seccion_img-perfil">
+                <div class="img-perfil-background gradient-principal_linear">
+                    <img class="img-perfil" src="../assets/image_flor-l.png">
+                </div>
+            </section>
+
+            <section class="seccion_texto-bio">
+                <div class="bloque_texto-bio">
+                    <header class="header_bio">
+                        <h1>Bio</h1>
+                        <h2>Diseñadora gráfica <br>
+                            en constante desarrollo</h2>
+                    </header>
+                
+                    <p>
+                    Entré al mundo del diseño hace unos años y descubrí un lugar lleno de posibilidades, en el que se me hace difícil elegir un único camino.
+                    <br><br>
+                    <em>Veo el diseño como una herramienta capaz de desarrollar ideas que mejoran la vida de las personas y el espacio que nos rodea; </em> facilitando, mejorando o sencillamente haciendo más bonito el día a día. 
+                    <br><br>
+                    Para mi desarrollo personal y profesional <em>considero la versatilidad y el aprendizaje constantes como imprescindibles</em> para poder adaptarme a las nuevas necesidades y retos futuros...
+                    </p>
+                </div>
+            
+                <div class="lista-bio">
+                    <h2>Trayectoria</h2>
+                    <dl>
+                        <dt><strong>2018–2020</strong></dt>
+                        <dd>Grado de Ilustración en I·Darte, Vitoria-Gasteiz.</dd>
+                    
+                        <dt><strong>2020–2024</strong></dt>
+                        <dd>Grado en Diseño Gráfico en I·Darte, Vitoria-Gasteiz.</dd>
+                    
+                        <dt><strong>2024</strong></dt>
+                        <dd>Especialización en Desarrollo Web Full Stack.</dd>
+                    </dl>
+                </div>
+                <button class="button_redireccion button_bio">
+                    <a href="portfolio.html ">Ver Portfolio</a>
+                </button>    
+            </section>
+        </article>
+
+        <article class="seccion_redes">
+            <p>Conoce más en:</p>
+            <div class="bloque_redes">
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="https://www.behance.net" target="_blank" aria-label="Behance">
+                    <i class="fa-brands fa-square-behance"></i>
+                </a>
+                <a href="https://es.linkedin.com/" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </div>
+            </article>
+    </main>
+        
+    
+
+    <!--FOOTER----------------------->
+    <footer class="efecto_cristal-1">
+        <p>©2025 IreneSaiz</p>
+        <p><a href="#">Privacidad y cookies</a></p>
+    </footer>
+</body>
