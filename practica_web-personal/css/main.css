@@ -50,11 +50,19 @@ a{text-decoration:none; color: inherit;}
 
 
 /*BOTONES ↓↓↓ ---------------------------------------------------*/
-    .button_enviar{
-        border-radius: 2em;
+    .button_enviar-formulario{
         color: white;
+        background-color:#555;
+        border: none;
+        outline: none;
+        font-family: inherit;
+        font-size: 1em;
+        padding: 1em 2em;
+    }
+    .button_enviar-formulario:hover{
         background-color: black;
     }
+
     .button_redireccion{
         background-color: rgb(186, 186, 181);
         color: #000;
@@ -405,18 +413,122 @@ a{text-decoration:none; color: inherit;}
             width: 100%;
         }  
 
-    
-
-/*Botón portfolio----------*/
-
-
 
 
 
 /* CLASES PORTFOLIO ↓↓↓ ------------------------------------------*/
 
-/* CLASES CONTACTO ↓↓↓ ------------------------------------------*/
 
+
+
+
+
+
+
+/* CLASES CONTACTO ↓↓↓ ------------------------------------------*/
+/*Info de contacto-------*/
+
+.main_contacto{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 6em;
+}
+    .seccion_redes_contacto{
+        position: relative;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 6em 0 4em 0;
+    }
+        .seccion_redes_contacto h1{
+            text-align: center;
+            margin: 0 0 3em 0;
+        }
+            .seccion_redes_contacto .bloque_redes{
+                display: flex;
+                flex-direction: column;
+                gap: 0.5em;
+                padding-left: 2em;
+            }
+                .seccion_redes_contacto h3{
+                    font-size: 0.6em;
+                    font-weight: 400;
+                }
+
+                .seccion_redes_contacto i{
+                    font-size: 1em;
+                }
+
+                .seccion_redes_contacto a{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 0.4em;
+                }
+
+                .seccion_redes_contacto a:hover{
+                    color:#000000;
+                }
+
+
+/*Info de contacto-------*/
+.gradient_contacto{
+    position: absolute;
+    z-index: -1000;
+    margin-top: -24em;
+    width: 100%;
+    height: 90vh;
+    border-radius: 1000em;
+    overflow-y: hidden;
+}
+
+
+/*Formulario-------------*/
+.formulario_contact{
+    width: 70%;
+    margin-bottom: 12em;
+}
+    .formulario_contact button{
+        margin-top: 2em;
+    }
+    
+    .formulario_contact label{
+        visibility: hidden;
+        height: 0em;
+    }
+
+fieldset{
+    border: none; 
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+}
+
+legend{
+    margin-bottom: 2em;
+    text-align: center;
+    width: 100%;
+    padding: 0 1em;
+}
+
+input, textarea{
+    border-radius: 0.25em;
+    border: none;
+    outline: none;
+    background-color: #eaeaea;
+    font: inherit;
+    padding: 1em;
+}
+
+.formulario_contact label{
+    visibility: hidden;
+    height: 0em;
+}
 
 
 
