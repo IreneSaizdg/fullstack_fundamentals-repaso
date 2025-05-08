@@ -266,7 +266,7 @@ a{text-decoration:none; color: inherit;}
                 .button_bio-home{
                     position: absolute;
                     top: 22%;
-                    left: 8%;
+                    left: %;
                 }
                 .button_portfolio-home{
                     position: absolute;
@@ -356,8 +356,6 @@ a{text-decoration:none; color: inherit;}
         font-size: 1.2em;
     }
         /*Bloque de texto*/
-        .bloque_texto-bio{
-        }
             .header_bio{
                 margin: 3em 0 4em 0;
                 text-align: center;
@@ -385,7 +383,7 @@ a{text-decoration:none; color: inherit;}
         
         /*Lista de Trayectoria*/   
         .lista-bio{
-            margin: 6em 0 ;
+            margin: 6em 0 0 0 ;
         }
             .lista-bio dt{
                 margin-top: 1em;
@@ -410,6 +408,7 @@ a{text-decoration:none; color: inherit;}
         
         /*Botón de redirección a portfolio*/ 
         .button_card-bio {
+            margin-top: 2em;
             width: 100%;
         }  
 
@@ -547,6 +546,110 @@ input, textarea{
             right: 0;
         }
 
+        /* CLASES CONTACTO ↓↓↓ ------------------------------------------*/
+    /*Info de contacto-------*/
+
+    .main_contacto{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-top: 6em;
+    }
+        .seccion_redes_contacto{
+            position: relative;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 6em 0 4em 0;
+        }
+            .seccion_redes_contacto h1{
+                text-align: center;
+                margin: 0 0 3em 0;
+            }
+                .seccion_redes_contacto .bloque_redes{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5em;
+                    padding-left: 2em;
+                }
+                    .seccion_redes_contacto h3{
+                        font-size: 0.6em;
+                        font-weight: 400;
+                    }
+
+                    .seccion_redes_contacto i{
+                        font-size: 1em;
+                    }
+
+                    .seccion_redes_contacto a{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 0.4em;
+                    }
+
+                    .seccion_redes_contacto a:hover{
+                        color:#000000;
+                    }
+
+
+    /*Info de contacto-------*/
+    .gradient_contacto{
+        position: absolute;
+        z-index: -1000;
+        margin-top: -24em;
+        width: 100%;
+        height: 90vh;
+        border-radius: 1000em;
+        overflow-y: hidden;
+    }
+
+
+    /*Formulario-------------*/
+    .formulario_contact{
+        width: 70%;
+        margin-bottom: 12em;
+    }
+        .formulario_contact button{
+            margin-top: 2em;
+        }
+        
+        .formulario_contact label{
+            visibility: hidden;
+            height: 0em;
+        }
+
+    fieldset{
+        border: none; 
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+        gap: 0.4em;
+    }
+
+    legend{
+        margin-bottom: 2em;
+        text-align: center;
+        width: 100%;
+        padding: 0 1em;
+    }
+
+    input, textarea{
+        border-radius: 0.25em;
+        border: none;
+        outline: none;
+        background-color: #eaeaea;
+        font: inherit;
+        padding: 1em;
+    }
+
+    .formulario_contact label{
+        visibility: hidden;
+        height: 0em;
+    }
         
 }
 /*a partir de 768px*/
@@ -558,14 +661,88 @@ input, textarea{
 -------------------------------------------------------
 */
 @media screen and (min-width: 992px) {
-    /*Nabvar---------------------------------------*/
+    /*BOTONES ↓↓↓ ---------------------------------------------------*/
+    .button_redireccion{
+        padding: 1.1em 5em;
+        font-size: 1.3em;
+    }
+    
+    /*NAVBAR---------------------------------------*/
         /*Bloque desplegable*/
         .bloque_menu-desplegable {
             width: 25%;
-            position: absolute;
-            right: 0;
+            }
+    
+    
+    /* CLASES HOME ↓↓↓ ------------------------------------------*/
+        /*Bloque de presentación*/
+        .main_presentacion{
+            padding-top: 6em;
         }
-    }
+            /*Header presentación*/
+            .header_presentacion{
+                bottom: 26%;
+                text-align: left;
+                padding: 0% 10%;
+            }
+            
+                .header_presentacion p{
+                    font-size: 4em;
+                    padding-bottom: 0.1em;
+                }
+            
+                .header_presentacion h1{
+                    font-size: 3em;
+                    padding-bottom: 0.5em;
+                }
+
+
+
+            /*Sección aura*/
+            .seccion-aura{
+                top: 3%;
+            }
+                /*Bloque Degradado + flor*/
+                .gradient_home{
+                    height: 70vh;
+                    width: 70vh;
+                }
+                    .img_flor-home{
+                        width: 25%;
+                        height: 25%;
+                    }
+
+                /*Bloque botones flotantes*/
+                    .button_bio-home{
+                        top: 30%;
+                        left: 27%;
+                    }
+                    .button_portfolio-home{
+                        top: 10%;
+                        left: 56%;
+                    }
+                    .button_contact-home{
+                        top: 45%;
+                        left: 65%;
+                    }
+
+
+            /*Sección redes flotantes*/
+            .seccion_redes{
+                bottom: 8em;
+                padding: 0 10%;
+                font-size: 1.2em;
+            }
+                .bloque_redes {
+                    gap: 1.25em;
+                }
+
+                .seccion_redes i{
+                font-size: 1.5em;
+                }
+
+    
+}
 /*a partir de 992px*/
 
 
@@ -575,6 +752,81 @@ input, textarea{
 -------------------------------------------------------
 */
 @media screen and (min-width: 1200px) {
+    /*NAVBAR---------------------------------------*/
+    /*Bloque desplegable*/
+    .bloque_menu-desplegable {
+        width: 23%;
+    }
     
+                
+    /* CLASES BIO ↓↓↓ ------------------------------------------*/ 
+    .main_bio{
+        height: 100vh;
+        padding-top: 6em;
+    }
+    /*Indicador de página --------------------*/
+    .indicador_bio {
+        height: 5%;
+        padding: 0.25em;
+    } 
+    /*Card Bio -------------------------------*/
+    .card_bio{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+    }
+    
+        /*Sección Imagen de perfil--*/
+        .seccion_img-perfil{
+            width: 40%;
+            }
+
+
+        /*Sección Texto de la bio----------*/
+        .seccion_texto-bio{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 1em 3em;
+            font-size: 1.2em;
+            width: 60%;
+        }
+            /*Bloque de texto*/
+            .bloque_texto-bio{
+                width: 60%;
+                margin-right: 4em;
+            }
+                .header_bio{
+                    margin: 1em 0;
+                    text-align: left;
+                }
+                
+                    .header_bio h1{
+                        padding-bottom: 0.5em;
+                    }
+
+                    .header_bio h2{
+                        padding-bottom: 0.5em;
+                    }
+            
+            /*Lista de Trayectoria*/   
+            .lista-bio{
+                padding: 2em 0;
+                width: 30%;
+                margin: 0 ;
+            }
+            
+            /*Botón de redirección a portfolio*/ 
+            .button_card-bio {
+                font-size: 1em;
+                margin-top: 1em;
+                padding: 1.1em 1em;
+            }  
+        
+            .seccion_redes_bio{
+                bottom: 8%;
+            }
+
 }
 /*a partir de 1200px*/
