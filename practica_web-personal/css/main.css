@@ -11,20 +11,6 @@ body{
 
 a{text-decoration:none; color: inherit;}
 
-.container{margin: 0 auto;}
-
-.full-container{width: 100%;}
-
-.dos-columnas{}
-
-.tres-columnas{}
-
-.cuatro-columnas{}
-
-.grid-container{display:grid;}
-
-.flex-container{display:flex;}
-
 
 
 /*CLASES GLOBALES ↑↑↑ -----------------------------------------------*/
@@ -266,7 +252,7 @@ a{text-decoration:none; color: inherit;}
                 .button_bio-home{
                     position: absolute;
                     top: 22%;
-                    left: %;
+                    left: 8%;
                 }
                 .button_portfolio-home{
                     position: absolute;
@@ -416,8 +402,47 @@ a{text-decoration:none; color: inherit;}
 
 
 /* CLASES PORTFOLIO ↓↓↓ ------------------------------------------*/
+.main_portfolio{
+    padding: 6em 0 15em 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+    .galeria_portfolio{
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        gap: 0.25em;
+    }
 
+        .galeria_portfolio img{
+            width: 100%;
+            text-align: center;
+            border-radius: 1em;
+        }
+
+        .img_portfolio-retrato{
+            margin: 6em 0 1em 0;
+        }
+
+    .button_portfolio{
+        width: 90%;
+    }
+
+    .seccion_redes_portfolio{
+        position: fixed;
+        width: 100%;
+        bottom: 5em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1.75em 0 1.5em;
+    }
 
 
 
@@ -546,111 +571,109 @@ input, textarea{
             right: 0;
         }
 
-        /* CLASES CONTACTO ↓↓↓ ------------------------------------------*/
-    /*Info de contacto-------*/
 
-    .main_contacto{
-        position: relative;
+
+    /* CLASES PORTFOLIO ↓↓↓ ------------------------------------------*/
+    .main_portfolio{
+        padding: 6em 0 15em 0;
+    }
+
+    .galeria_portfolio{
+        margin-top: 1em;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
-        width: 100%;
-        padding-top: 6em;
+        justify-content: center;
+        width: 90%;
+        gap: 0.25em;
     }
-        .seccion_redes_contacto{
-            position: relative;
-            width: 70%;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            margin: 6em 0 4em 0;
-        }
-            .seccion_redes_contacto h1{
-                text-align: center;
-                margin: 0 0 3em 0;
-            }
-                .seccion_redes_contacto .bloque_redes{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 0.5em;
-                    padding-left: 2em;
-                }
-                    .seccion_redes_contacto h3{
-                        font-size: 0.6em;
-                        font-weight: 400;
-                    }
-
-                    .seccion_redes_contacto i{
-                        font-size: 1em;
-                    }
-
-                    .seccion_redes_contacto a{
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
-                        gap: 0.4em;
-                    }
-
-                    .seccion_redes_contacto a:hover{
-                        color:#000000;
-                    }
-
-
-    /*Info de contacto-------*/
-    .gradient_contacto{
-        position: absolute;
-        z-index: -1000;
-        margin-top: -24em;
-        width: 100%;
-        height: 90vh;
-        border-radius: 1000em;
-        overflow-y: hidden;
-    }
-
-
-    /*Formulario-------------*/
-    .formulario_contact{
-        width: 70%;
-        margin-bottom: 12em;
-    }
-        .formulario_contact button{
-            margin-top: 2em;
-        }
-        
-        .formulario_contact label{
-            visibility: hidden;
-            height: 0em;
-        }
-
-    fieldset{
-        border: none; 
-        background: transparent;
-        display: flex;
-        flex-direction: column;
-        gap: 0.4em;
-    }
-
-    legend{
-        margin-bottom: 2em;
+    .galeria_portfolio picture{
         text-align: center;
-        width: 100%;
-        padding: 0 1em;
+        border-radius: 1em;
     }
 
-    input, textarea{
-        border-radius: 0.25em;
-        border: none;
-        outline: none;
-        background-color: #eaeaea;
-        font: inherit;
-        padding: 1em;
+        .galeria_portfolio img{
+            text-align: center;
+            border-radius: 1em;
+            max-height: 30vh;
+        }
+        .img_portfolio-retrato{
+            margin: 5vh auto;
+            width: 100%;
+        }
+            .img_portfolio-retrato img{
+                width: auto;
+            }
+
+    .button_portfolio{
+        width: 90%;
     }
 
-    .formulario_contact label{
-        visibility: hidden;
-        height: 0em;
+    .seccion_redes_portfolio{
+        bottom: 8em;
+        font-size: 1.2em;
+        padding: 0 30%;
     }
-        
+
+        .seccion_redes_portfolio .bloque_redes {
+        gap: 1.25em;
+        }
+
+        .seccion_redes_portfolio i{
+        font-size: 1.5em;
+        }
+
+
+    
+    /* CLASES CONTACTO ↓↓↓ ------------------------------------------*/
+        /*Info de contacto-------*/
+
+        .main_contacto{
+            flex-direction: row;
+            align-items: flex-start;
+            height: 100vh;
+            padding: 15% 20%;
+            width: 100%;
+            overflow: hidden;
+        }
+            .seccion_redes_contacto{
+                margin: 0;
+                width: 60%;
+            }
+                .seccion_redes_contacto h1{
+                    margin: 0 0 3em 0;
+                }
+                    .seccion_redes_contacto .bloque_redes{
+                        gap: 0.5em;
+                    }
+                        .seccion_redes_contacto h3{
+                            font-size: 0.75em;
+                        }
+
+                        .seccion_redes_contacto i{
+
+                            font-size: 1.75em;
+                        }
+
+                        .seccion_redes_contacto a{
+                            gap: 1em;
+                        }
+
+
+        /*Info de contacto-------*/
+        .gradient_contacto{
+            top: -30em;
+            height: 180vh;
+        }
+
+
+        /*Formulario-------------*/
+        .formulario_contact{
+            width: 50%;
+            margin-bottom: 12em;
+        }
+    
 }
 /*a partir de 768px*/
 
@@ -762,7 +785,7 @@ input, textarea{
     /* CLASES BIO ↓↓↓ ------------------------------------------*/ 
     .main_bio{
         height: 100vh;
-        padding-top: 6em;
+        padding-top: 9em;
     }
     /*Indicador de página --------------------*/
     .indicador_bio {
